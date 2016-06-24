@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Information</title>
+		<link rel="stylesheet" type="text/css" href="info.css">
+		<link rel="stylesheet" type="text/css" href="head.css">
+		<script src="jquery1.11.1.min.js"></script>
+		<script src="info.js"></script>
+
+		<script>
+			$(function(){
+				$("#menubtn").click(function(){
+					$("#menu").slideToggle();
+				});
+			});
+
+			window.onload = function(){
+				infoLoad();
+			}
+		</script>
+
+		<!-- スマホ版サイト名 -->
+		<h5 class="site-name">UNIVERSE</h5>
+		<button type="button" id="menubtn">
+			<i class="fa fa-bars"></i>▽
+		</button>
+		<nav class="menu" id="menu">
+			<ul>
+				<li><a href="#">Information</a></li>
+				<li><a href="#">SITE MAP</a></li>
+				<li><a href="index.html">HOME</a></li>
+			</ul>
+		</nav>
+	</head>
+
+	<body bgcolor="#d3d3d3">
+		<div class="boxi">
+			<div class="boxi-1">
+				<div class="gaiyou">
+					<a href="pages/un.html">
+						<i class="fa fa-un"></i>
+						<h1>"宇宙"</h1>
+						<p>Universe</p>
+					</a>
+				</div>
+			</div>
+
+				<div class="boxi-2">
+					<div class="gaiyou">
+						<a href="#g">
+							<i class="fa fa-ea"></i>
+							<h1>"gala"</h1>
+							<p>Earth</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="boxi-3">
+					<div class="gaiyou">
+						<a href="pages/sun.html">
+							<i class="fa fa-so"></i>
+							<h1>"太陽系"</h1>
+							<p>Solor system</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="boxi-4">
+					<div class="gaiyou">
+						<a href="pages/gala.html">
+							<i class="fa fa-ga"></i>
+							<h1>"銀河"</h1>
+							<p>Galaxy</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		<font size="6" class="gallery"><a name="g"><u>◉　写真 -Gallery-  <u></a></font>
+		<br>
+		<font size="2" color="gray" class="gallname">著作者:Eurpean Southern</font><br>
+		<center><img src="images/un.jpg" width="90%" height="90%"></center><br>
+		<font size="2" color="gray" class="gallname">著作者:NASA</font>
+		<center><img src="images/gala.jpg" width="90%" height="90%"></center><br>
+		<font size="2" color="gray" class="gallname">著作者:NASA</font>
+		<center><img src="images/sun.jpg" width="90%" height="90%"></center><br>
+		<font size="2" color="gray" class="gallname">著作者:NASA</font>
+		<center><img src="images/earth.jpg" width="90%" height="90%"></center><br>
+		<font size="2" color="gray" class="gallname">著作者:NASA</font>
+		<center><img src="images/bw.jpg" width="90%" height="90%"></center><br>
+		<font size="2" color="gray" class="gallname">著作者:Alain r</font>
+		<center><img src="images/bw2.jpg" width="90%" height="90%"></center><br>
+	</body>
+</html>

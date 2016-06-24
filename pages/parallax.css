@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/*
+パララックス
+ */
+div.parallax{
+	height: 200px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.content{
+	padding: 30px 0;
+}
+
+.box{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.box h2{
+	line-height: 200px;
+	font-size: 60px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+}
+
+.img_1{
+	background: url(images/unp.jpg);
+}
+.img_2{
+	background: url(images/earthp.jpg);
+}
+.img_3{
+	background: url(images/sunp.jpg);
+}
+.img_4{
+	background: url(img/gala.jpg);
+}
+.img_5{
+	background: url(images/bwp.jpg);
+}
+
+.bottom_title{
+	text-shadow: 0 0 10px gray, 0 0 15px black;
+	color: white;
+}
+
+.titile{
+	text-shadow: 0 0 10px gray, 0 0 15px black;
+	color: white;
+}
+
+.title_blue{
+	color: lightblue;
+}
+
+/*
+メディアクエリ
+ */
+@media screen and (max-width: 960px){
+	.box{
+		width: auto;
+	}
+}

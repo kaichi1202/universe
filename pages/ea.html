@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>parallax</title>
+		<link rel="stylesheet" type="text/css" href="parallax.css">
+		<link rel="stylesheet" type="text/css" href="../head.css">
+		<script src="../jquery1.11.1.min.js"></script>
+		<script>
+		$(function(){
+
+			$("#menubtn").click(function(){
+				$("#menu").slideToggle();
+			});
+		});
+		</script>
+
+		<!-- スマホ版サイト名 -->
+		<h5 class="site-name">UNIVERSE</h5>
+		<button type="button" id="menubtn">
+		  <i class="fa fa-bars"></i>▽
+	  </button>
+		<nav class="menu" id="menu">
+			<ul>
+				<li><a href="#">Information</a></li>
+				<li><a href="#">SITE MAP</a></li>
+				<li><a href="index.html">HOME</a></li>
+			</ul>
+		</nav>
+	</head>
+	<body bgcolor="#d3d3d3">
+		<h1 class="titile"><span class="title_blue">水</span>の惑星、地球</h1>
+		<center class="bottom_title">Water of the planet, Earth.</center><br>
+		<center>
+			皆さんは「地球は青かった」という言葉を知っていますか？<br>
+			みなさん知っていると思いますが、ユーリイ・ガガーリンの言葉です。<br>
+			彼はロシア人の宇宙飛行士で、人類として初めて宇宙遊泳に成功した人物です。<br>
+	</center>
+		<br><br><br><br><br><br><br><br><br><br>
+		<div class="parallax img_2">
+			<div class="box">
+				<h2>地球</h2>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="box">
+				 地球とは何か...
+				<br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br>
+				スクロール用
+			</div>
+		</div>
+	</body>
+</html>
