@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>web</title>
+		<link rel="stylesheet" type="text/css" href="slide.css">
+		<script src="jquery1.7.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="head.css">
+		<script>
+			//	ローディング表示
+			window.onload = function(){
+				$(function(){
+					//	表示をフェードアウト
+					$("#loading").fadeOut(500);
+					//	メインページをフェードイン
+					setTimeout(function(){
+						$("#main").fadeIn();
+					}, 500);
+				});
+				auto();
+				load();
+			}
+		</script>
+		<script src="jquery1.11.1.min.js"></script>
+		<script type="text/javascript" src="head.js"></script>
+		<script>
+		$(function(){
+			$("#menubtn").click(function(){
+				$("#menu").slideToggle();
+			});
+		});
+		</script>
+		<!-- スマホ版サイト名 -->
+		<h5 class="site-name">UNIVERSE</h5>
+		<button type="button" id="menubtn">
+		<i class="fa fa-bars"></i>▽
+	</button>
+		<nav class="menu" id="menu">
+			<ul>
+				<li><a href="info.html">Information</a></li>
+				<li><a href="#">SITE MAP</a></li>
+				<li><a href="#">HOME</a></li>
+			</ul>
+		</nav>
+	</head>
+	<body bgcolor="#d3d3d3">
+		<!-- ローディング表示 -->
+		<div id="loading">
+			<h1>読み込み中・・・</h1>
+			この表示が長時間消えない場合、<br>
+			JavaScriptが無効になっている可能性があります。<br>
+			このサイトはJavaScriptが無効だと正常に見ることができません。<br>
+			ブラウザの設定でJavaScriptをONにしてください。<br>
+		</div>
+
+		<div id="main">
+			<div class="slider">
+				<div id="text">宇宙</div>
+				<img id="right" src="images/arrow.png">
+				<img id="left" src="images/arrow.png">
+				<img id="gray" src="images/gray.png">
+				<div id="moveButton">
+					<div id="one">●</div>
+					<div id="two">○</div>
+					<div id="three">○</div>
+					<div id="four">○</div>
+					<div id="five">○</div>
+				</div>
+				<div class="slideSet">
+					<div class="slide"><img src="images/un.jpg" class="slideImg"></div>
+					<div class="slide"><img src="images/earth.jpg" class="slideImg"></div>
+					<div class="slide"><img src="images/sun.jpg" class="slideImg"></div>
+					<div class="slide"><img src="images/gala.jpg" class="slideImg"></div>
+					<div class="slide"><img src="images/bw.jpg" class="slideImg"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="box">
+			<div class="box-1">
+				<div class="gaiyou">
+					<a href="pages/un.html">
+						<i class="fa fa-un"></i>
+						<h1>"宇宙"</h1>
+						<p>Universe</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="gaiyou">
+					<a href="pages/ea.html">
+						<i class="fa fa-ea"></i>
+						<h1>"地球"</h1>
+						<p>Earth</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="box-3">
+				<div class="gaiyou">
+					<a href="pages/sun.html">
+						<i class="fa fa-so"></i>
+						<h1>"太陽系"</h1>
+						<p>Solor system</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="box-4">
+				<div class="gaiyou">
+					<a href="pages/gala.html">
+						<i class="fa fa-ga"></i>
+						<h1>"銀河"</h1>
+						<p>Galaxy</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="box-5">
+				<div class="gaiyou">
+					<a href="pages/bw.html">
+						<i class="fa fa-bw"></i>
+						<h1>"ブラックホール"</h1>
+						<p>Black hole</p>
+					</a>
+				</div>
+			</div>
+
+			<!-- TODO: 修正 -->
+			<div class="share">
+				<ul>
+					<li>
+						<a href="https://twitter.com/intent/tweet?text= 宇宙 &amp;url=http;//aa.com/&amp;via=@kazaki_monst" onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-tw">
+							<i class="fa fa-twitter"></i>
+							<span>Twitter</span>でシェア
+						</a>
+					</li>
+					<li>
+						<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fexample.com" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-fb">
+							<i class="fa fa-facebook"></i>
+							<span>Facebook</span>でシェア
+						</a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/share?url=http%3A%2F%2Fexample.com" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-gp">
+							<i class="fa fa-google-plus"></i>
+							<span>Google+</span>でシェア
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- JavaScript読み込み -->
+		<script type="text/javascript" src="slide.js"></script>
+	</body>
+</html>

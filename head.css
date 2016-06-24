@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body	{margin: 0;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
+
+
+#menu{
+	background-color: #a9a9a9;
+}
+
+#menu ul{
+	margin: 0 auto;
+	padding-left: 8px;
+	padding-right: 8px;
+	height: 50px;
+	width: 70%;
+	box-sizing: border-box;
+	list-style: none;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+#menu li{
+	float: left;
+}
+
+#menu li a{
+	text-decoration: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 30px;
+	color: #FFFFFF;
+	transition: 0.3s;
+}
+
+#menu li a:hover{
+	color: #C0C0C0;
+}
+
+h1{
+	text-align: center;
+}
+
+
+/* 979(767)px以下 */
+@media (max-width: 767px){
+/* toggle button */
+#menubtn{
+	padding: 6px 12px;
+	border: solid 1px #aaaaaa;
+	border-radius: 5px;
+	background-color: #d3d3d3;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+}
+#menubtn:hover{
+	background-color: #a9a9a9;
+	border: solid 1px #aaaaaa;
+	border-radius: 5px;
+}
+#menubtn:focus{
+	outline: none;
+}
+#menubtn i{
+	color:#888888;
+	font-size: 18px;
+}
+#menubtn span{
+	display:inline-block;
+	text-indent: -9999px;
+}
+#menu ul{
+	height: 150px;
+	flex-direction: column-reverse;
+	text-align: center;
+}
+/* list */
+.menu{
+	display: none;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu li a{
+	display: block;
+	padding: 5px;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none;
+}
+.menu li a:hover{
+	background-color: #eeeeee;
+}
+}
+/* 980(768)px以上 */
+@media (min-width: 768px) {
+
+.site-name{
+	display: none;
+}
+
+/* togle button */
+#menubtn{
+	display: none;
+}
+
+/* navigation */
+#menu{
+	display: block !important;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu li a{
+	display: block;
+	padding: 10px 15px;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none;
+}
+.menu li a:hover{
+	background-color: #eeeeee;
+}
+.menu ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.menu li{
+	float: left;
+	width: auto;
+}
+
+
+}

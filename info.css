@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+.gallery{
+	text-shadow: 0 0 10px gray, 0 0 15px black;
+	color: white;
+}
+/*
+.gallery{
+	text-shadow: 0 0 10px gray, 0 0 15px black;
+	color: white;
+	margin-left: 30px;
+}
+.gallname{
+	margin-left: 60px;
+} */
+
+body	{margin: 0;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
+
+/* 概要けすな */
+.gaiyou a	{display: block;
+	background-color: #222222;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none}
+
+.gaiyou a:hover	{opacity: 0.8}
+
+.gaiyou i	{display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+
+.gaiyou .fa-un	{background-color: #4169e1}
+
+.gaiyou .fa-ea	{background-color: #32cd32}
+
+.gaiyou .fa-so	{background-color: #ffa500}
+
+.gaiyou .fa-ga	{background-color: #1E90FF}
+
+
+.gaiyou h1	{margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	font-weight: normal}
+
+.gaiyou p	{margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #524e3c;
+	font-size: 13px}
+
+
+/* 補足説明 */
+.follow-info	{margin-top: 0;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #dddddd;
+	font-size: 15px;
+	text-align: center}
+
+.follow-info {
+	position: relative;
+	background: #dddddd;
+}
+.follow-info:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(221, 221, 221, 0);
+	border-top-color: #dddddd;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+/* コピーライト */
+.copyright p	{margin: 0;
+	color: #666666;
+	font-size: 14px}
+
+/* ボックスの上下 */
+
+.boxi	{padding-top: 0px}
+
+.boxi-1, .boxi-2, .boxi-3
+	{padding-bottom: 0px}
+
+/* ########### 768px以上 ########### */
+@media (min-width: 768px) {
+
+/* BOXi-1、BOXi-2、BOXi-3を横に並べる設定 */
+.bo:after	{content: "";
+	display: block;
+	clear: both}
+
+.boxi-1	{float: left;
+	width: 25%;
+	margin-right: 0%}
+
+.boxi-2	{float: left;
+	width: 25%;
+	margin-right: 0%}
+
+.boxi-3	{float: left;
+	width: 25%;
+	margin-right: 0%}
+
+.boxi-4	{float: left;
+	width: 25%;
+	margin-right: 0%}
+
+
+}
