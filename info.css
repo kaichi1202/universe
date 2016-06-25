@@ -22,7 +22,8 @@ body	{margin: 0;
 	background-color: #222222;
 	color: #ffffff;
 	text-align: center;
-	text-decoration: none}
+	text-decoration: none;
+	width: 100%}
 
 .gaiyou a:hover	{opacity: 0.8}
 
@@ -53,6 +54,22 @@ body	{margin: 0;
 	padding-bottom: 1px;
 	background-color: #524e3c;
 	font-size: 13px}
+
+.boxi-1	{float: left;
+	width: 50%;
+	margin-right: 0%}
+
+.boxi-2	{float: left;
+	width: 50%;
+	margin-right: 0%}
+
+.boxi-3	{float: left;
+	width: 50%;
+	margin-right: 0%}
+
+.boxi-4	{float: left;
+	width: 50%;
+	margin-right: 0%}
 
 
 /* 補足説明 */
@@ -91,7 +108,7 @@ body	{margin: 0;
 
 .boxi	{padding-top: 0px}
 
-.boxi-1, .boxi-2, .boxi-3
+.boxi-1, .boxi-2, .boxi-3, .boxi-4
 	{padding-bottom: 0px}
 
 /* ########### 768px以上 ########### */

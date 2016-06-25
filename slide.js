@@ -155,4 +155,5 @@ function setPosition(){
 	var slideNum = $(".slide").length;			//	.slideの数
 	var slideSetWidth = w * slideNum;			//	幅 * 数
 	$(".slideSet").css("width", slideSetWidth);	//	cssにセット
+	$(".share li").css("height", $(".gaiyou a").height() / 3);
 }
