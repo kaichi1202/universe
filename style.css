@@ -1,86 +1,240 @@
 ﻿@charset "UTF-8";
 
 body	{margin: 0;
-	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+	}
 
-/* 概要けすな */
-.gaiyou a	{display: block;
+	/*///////////メイン記事//////////*/
+	.gaiyou a	{display: block;
+		background-color: #222222;
+		color: #ffffff;
+		text-align: center;
+		text-decoration: none;
+		float: left;
+		width: 50%;
+		}
+
+	.gaiyou a:hover	{opacity: 0.8;
+		}
+
+	.gaiyou i	{display: block;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 0px;
+		}
+
+
+
+	.gaiyou .fa-un	{background-color: #4169e1}
+
+	.gaiyou .fa-ea	{background-color: #32cd32}
+
+	.gaiyou .fa-so	{background-color: #ffa500}
+
+	.gaiyou .fa-ga	{background-color: #1E90FF}
+
+
+
+
+
+	.gaiyou h1	{margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		font-size: 18px;
+		font-weight: normal;
+		}
+
+	.gaiyou p	{margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		background-color: #524e3c;
+		font-size: 13px;
+		}
+
+
+	/* 補足説明 */
+	.follow	{margin-top: 0;
+		margin-bottom: 20px;
+		padding: 10px;
+		background-color: #dddddd;
+		font-size: 15px;
+		text-align: center;
+		}
+
+	.follow {
+		position: relative;
+		background: #dddddd;
+		}
+	.follow:after {
+		top: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(221, 221, 221, 0);
+		border-top-color: #dddddd;
+		border-width: 15px;
+		margin-left: -15px;
+		}
+
+	/* ボックスの上下 */
+
+	.box{padding-top: 0px;
+		}
+
+	.box-1, .box-2, .box-3, .box-4
+		{padding-bottom: 0px;
+		}
+
+	/* ########### 768px以上 ########### */
+	@media (min-width: 768px) {
+
+
+	/* BOX-1、BOX-2、BOX-3を横に並べる設定 */
+	.gaiyou a{
+		width: 100%;
+		}
+
+	.box:after	{content: "";
+		display: block;
+		clear: both;
+		}
+
+	.box-1	{float: left;
+		width: 25%;
+		margin-right: 0%;
+		}
+
+	.box-2	{float: left;
+		width: 25%;
+		margin-right: 0%;
+		}
+
+	.box-3	{float: left;
+		width: 25%;
+		margin-right: 0%;
+		}
+
+	.box-4	{float: left;
+		width: 25%;
+		margin-right: 0%;
+		}
+
+	}
+
+	/* ########### 1190px以上 ########### */
+	@media (min-width: 2304px) {
+
+	/* 全体の横幅を固定 */
+	.box
+		{width: 2304px;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	}
+	/*///////////メイン記事END//////////*/
+
+
+
+
+
+
+/*///////////注目記事//////////*/
+.gaiyoum a	{display: block;
 	background-color: #222222;
 	color: #ffffff;
 	text-align: center;
-	text-decoration: none}
+	text-decoration: none;
+	float: left;
+	width: 50%;
+	}
 
-.gaiyou a:hover	{opacity: 0.8}
+.gaiyoum a:hover	{opacity: 0.8;
+	}
 
-.gaiyou i	{display: block;
+.gaiyoum i	{display: block;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	font-size: 40px}
+	font-size: 40px;
+	}
 
-.gaiyou .fa-un	{background-color: #4169e1}
+.gaiyoum .fa-ali1	{background-color: #ffffff}
 
-.gaiyou .fa-ea	{background-color: #32cd32}
+.gaiyoum .fa-ali2	{background-color: #ffffff}
 
-.gaiyou .fa-so	{background-color: #ffa500}
+.gaiyoum .fa-ali3	{background-color: #ffffff}
 
-.gaiyou .fa-ga	{background-color: #1E90FF}
+.gaiyoum .fa-ali4	{background-color: #ffffff}
 
-.gaiyou .fa-bw	{background-color: #9370db}
+.gaiyoum .fa-ali5	{background-color: #ffffff}
 
-.gaiyou h1	{margin-top: 0;
+.gaiyoum h1	{margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: 20px;
-	font-weight: normal}
+	font-weight: normal;
+	}
 
-.gaiyou p	{margin-top: 0;
+.gaiyoum p	{margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: #524e3c;
-	font-size: 15px}
-
-/* SNSのシェアボタン */
-.share	{margin-top: 40px}
-
-.share ul	{margin: 0;
-	padding: 0;
-	list-style: none}
-
-.share li a	{display: block;
-	padding: 10px 5px;
-	color: #ffffff;
 	font-size: 15px;
-	text-align: center;
-	text-decoration: none}
+	}
 
-.share-tw	{background-color: #55acee}
-.share-fb	{background-color: #3b5998}
-.share-gp	{background-color: #dd4b39}
+	/* SNSのシェアボタン */
 
-.share li a:hover	{opacity: 0.8}
 
-.share ul:after	{content: "";
-	display: block;
-	clear: both}
+	.share ul	{margin: 0;
+		padding: 0;
+		list-style: none}
 
-.share li	{float: left;
-	width: 33.3333%}
+	.share li a	{display: block;
+		color: #ffffff;
+		font-size: 15px;
+		text-align: center;
+		text-decoration: none;
+		}
 
-/* 補足説明 */
-.follow-info	{margin-top: 0;
+	.share-tw	{background-color: #55acee;
+		height: 100%}
+	.share-fb	{background-color: #3b5998;
+		height: 100%}
+	.share-gp	{background-color: #dd4b39;
+		height: 100%}
+
+	.share li a:hover	{opacity: 0.8}
+
+	.share ul:after	{content: "";
+		display: block;
+		clear: both;
+		}
+
+	.share li	{float: left;
+		width: 33.3333%;
+		}
+
+/* 注目記事の補足説明 */
+.followm	{margin-top: 0;
 	margin-bottom: 20px;
 	padding: 10px;
 	background-color: #dddddd;
 	font-size: 15px;
-	text-align: center}
+	text-align: center;
+	}
 
-.follow-info {
+.followm {
 	position: relative;
 	background: #dddddd;
-}
-.follow-info:after {
+	}
+.followm:after {
 	top: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -93,45 +247,65 @@ body	{margin: 0;
 	border-top-color: #dddddd;
 	border-width: 15px;
 	margin-left: -15px;
-}
-
-/* コピーライト */
-.copyright p	{margin: 0;
-	color: #666666;
-	font-size: 14px}
+	}
 
 /* ボックスの上下 */
+.boxm	{padding-top: 0px;
+	}
 
-.box	{padding-top: 0px}
-
-.box-1, .box-2, .box-3
-	{padding-bottom: 0px}
+.boxm-1, .boxm-2, .boxm-3, .boxm-4, .boxm-5
+	{padding-bottom: 0px;}
 
 /* ########### 768px以上 ########### */
 @media (min-width: 768px) {
 
 /* BOX-1、BOX-2、BOX-3を横に並べる設定 */
-.bo:after	{content: "";
+.gaiyoum a{
+	width: 100%;
+	}
+
+.boxm:after	{content: "";
 	display: block;
-	clear: both}
+	clear: both;
+	}
 
-.box-1	{float: left;
+.boxm-1	{float: left;
 	width: 20%;
-	margin-right: 0%}
+	margin-right: 0%;
+	}
 
-.box-2	{float: left;
+.boxm-2	{float: left;
 	width: 20%;
-	margin-right: 0%}
+	margin-right: 0%;
+	}
 
-.box-3	{float: left;
+.boxm-3	{float: left;
 	width: 20%;
-	margin-right: 0%}
+	margin-right: 0%;
+	}
 
-.box-4	{float: left;
+.boxm-4	{float: left;
 	width: 20%;
-	margin-right: 0%}
+	margin-right: 0%;
+	}
 
-.box-5	{float: left;
-	width: 20%}
+.boxm-5	{float: left;
+	width: 20%;
+	margin-right: 0%;
+	}
+
+
 
 }
+
+/* ########### 2560px以上 ########### */
+@media (min-width: 2560px) {
+
+/* 全体の横幅を固定 */
+.boxm{
+	width: 2560px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+}
+/*///////////注目記事END//////////*/

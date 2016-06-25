@@ -2,7 +2,6 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>web</title>
 		<link rel="stylesheet" type="text/css" href="slide.css">
 		<script src="jquery1.7.0.min.js"></script>
@@ -24,10 +23,18 @@
 			}
 		</script>
 		<script src="jquery1.11.1.min.js"></script>
-		<script type="text/javascript" src="head.js"></script>
+
 		<script>
+		var isDown = false;
 		$(function(){
 			$("#menubtn").click(function(){
+		    if (isDown == true) {
+		        $("#menubtn").html('<i class="fa fa-bars"></i>▽');
+		        isDown = false;
+		    } else {
+		        $("#menubtn").html('<i class="fa fa-bars"></i>△');
+		        isDown = true;
+		    }
 				$("#menu").slideToggle();
 			});
 		});
@@ -46,6 +53,50 @@
 		</nav>
 	</head>
 	<body bgcolor="#d3d3d3">
+
+
+		<div class="box">
+		  <div class="box-1">
+		  	<div class="gaiyou">
+		  		<a href="pages/un.html">
+		  			<i class="fa fa-un"></i>
+		  			<h1>"宇宙"</h1>
+		  			<p>Universe</p>
+		  		</a>
+		  	</div>
+		  </div>
+
+			<div class="box-2">
+				<div class="gaiyou">
+					<a href="pages/ea.html">
+						<i class="fa fa-ea"></i>
+						<h1>"地球"</h1>
+						<p>Earth</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="box-3">
+				<div class="gaiyou">
+					<a href="pages/sun.html">
+						<i class="fa fa-so"></i>
+						<h1>"太陽系"</h1>
+						<p>Solor system</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="box-4">
+				<div class="gaiyou">
+					<a href="pages/gala.html">
+						<i class="fa fa-ga"></i>
+						<h1>"銀河"</h1>
+						<p>Galaxy</p>
+					</a>
+				</div>
+			</div>
+
+
 		<!-- ローディング表示 -->
 		<div id="loading">
 			<h1>読み込み中・・・</h1>
@@ -78,59 +129,64 @@
 			</div>
 		</div>
 
-
-		<div class="box">
-			<div class="box-1">
-				<div class="gaiyou">
+		<div class="boxm">
+			<div class="boxm-1">
+				<div class="gaiyoum">
 					<a href="pages/un.html">
-						<i class="fa fa-un"></i>
+						<i class="fa fa-ali1"></i>
 						<h1>"宇宙"</h1>
 						<p>Universe</p>
 					</a>
 				</div>
 			</div>
 
-			<div class="box-2">
-				<div class="gaiyou">
+			<div class="boxm-2">
+				<div class="gaiyoum">
 					<a href="pages/ea.html">
-						<i class="fa fa-ea"></i>
+						<i class="fa fa-ali2"></i>
 						<h1>"地球"</h1>
 						<p>Earth</p>
 					</a>
 				</div>
 			</div>
 
-			<div class="box-3">
-				<div class="gaiyou">
+			<div class="boxm-3">
+				<div class="gaiyoum">
 					<a href="pages/sun.html">
-						<i class="fa fa-so"></i>
+						<i class="fa fa-ali3"></i>
 						<h1>"太陽系"</h1>
 						<p>Solor system</p>
 					</a>
 				</div>
 			</div>
 
-			<div class="box-4">
-				<div class="gaiyou">
+			<div class="boxm-4">
+				<div class="gaiyoum">
 					<a href="pages/gala.html">
-						<i class="fa fa-ga"></i>
+						<i class="fa fa-ali4"></i>
 						<h1>"銀河"</h1>
 						<p>Galaxy</p>
 					</a>
 				</div>
 			</div>
 
-			<div class="box-5">
-				<div class="gaiyou">
-					<a href="pages/bw.html">
-						<i class="fa fa-bw"></i>
-						<h1>"ブラックホール"</h1>
-						<p>Black hole</p>
+			<div class="boxm-5">
+				<div class="gaiyoum">
+					<a href="pages/gala.html">
+						<i class="fa fa-ali5"></i>
+						<h1>"銀河"</h1>
+						<p>Galaxy</p>
 					</a>
 				</div>
 			</div>
 
-			<!-- TODO: 修正 -->
+
+
+
+
+
+
+
 			<div class="share">
 				<ul>
 					<li>
