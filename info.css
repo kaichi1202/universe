@@ -4,21 +4,15 @@
 	text-shadow: 0 0 10px gray, 0 0 15px black;
 	color: white;
 }
-/*
-.gallery{
-	text-shadow: 0 0 10px gray, 0 0 15px black;
-	color: white;
-	margin-left: 30px;
-}
-.gallname{
-	margin-left: 60px;
-} */
+
 
 body	{margin: 0;
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
-/* 概要けすな */
+
 .gaiyou a	{display: block;
+    border-style: double;
+    
 	background-color: #222222;
 	color: #ffffff;
 	text-align: center;
