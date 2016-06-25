@@ -27,8 +27,10 @@ body	{margin: 0;
 
 #menu li a{
 	text-decoration: none;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 20px;
+	padding-left: 20px;
 	font-size: 30px;
 	color: #FFFFFF;
 	transition: 0.3s;
