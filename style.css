@@ -219,6 +219,18 @@ body	{margin: 0;
 		display: block;
 		text-align: center;
 	}
+	
+	.share-tw:hover{
+		opacity: 0.8;
+	}
+	
+	.share-fb:hover{
+		opacity: 0.8;
+	}
+	
+	.share-gp:hover{
+		opacity: 0.8;
+	}
 
 /* 注目記事の補足説明 */
 .followm	{margin-top: 0;
@@ -298,19 +310,37 @@ body	{margin: 0;
 	}
 
 .share-tw {
+	height: auto;
 	width: 33.3333%;
 	float: left;
 	}
 
 .share-fb {
+	height: auto;
 	width: 33.3333%;
 	float: left;
 	}
 
 .share-gp {
+	height: auto;
 	width: 33.3333%;
 	float: left;
 	}
+
+.share-tw a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.share-fb a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.share-gp a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 }
 
