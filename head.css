@@ -12,7 +12,6 @@ body	{margin: 0;
 	margin: 0 auto;
 	padding-left: 8px;
 	padding-right: 8px;
-	height: 50px;
 	width: 70%;
 	box-sizing: border-box;
 	list-style: none;
@@ -75,6 +74,8 @@ h1{
 	text-indent: -9999px;
 }
 #menu ul{
+	padding: 0px;
+	width: 100%;
 	height: 150px;
 	flex-direction: column-reverse;
 	text-align: center;
@@ -84,8 +85,8 @@ h1{
 	display: none;
 }
 .menu ul{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	list-style: none;
 }
 .menu li a{
