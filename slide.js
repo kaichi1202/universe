@@ -122,7 +122,7 @@ $("#five").click(function(){
 function auto(){
 	sliding();
 	slideCurrent++;
-	setTimeout("auto()", 5000);
+	setTimeout("auto()", 8000);
 }
 
 function load(){
