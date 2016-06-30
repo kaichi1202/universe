@@ -35,7 +35,6 @@ body{
 #right{
 	width: 50px;
 	opacity: 0.7;
-	transform: rotate(180deg);
 	position: absolute;
 	top: 250px;
 	right: 10px;
