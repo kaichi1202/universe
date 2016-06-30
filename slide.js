@@ -134,6 +134,7 @@ $(window).resize(function(){
 	setPosition();
 	width = $(window).width();
 	sliding();
+	change();
 });
 
 function setPosition(){
@@ -156,4 +157,33 @@ function setPosition(){
 	var slideSetWidth = w * slideNum;			//	幅 * 数
 	$(".slideSet").css("width", slideSetWidth);	//	cssにセット
 	$(".share li").css("height", $(".gaiyou a").height() / 3);
+}
+
+//	スマホ対応
+function change(){
+	if (width < 768){
+		var w = $(window).width();
+		var h = w * (550 / 1280);
+		document.getElementById("right").src = "images/marrow-r-w.png";
+		document.getElementById("left").src = "images/marrow-l-w.png";
+		$("#right").css("max-height", h);
+		$("#left").css("max-height", h);
+		$("#right").css("width", "auto");
+		$("#left").css("width", "auto");
+		$("#right").css("top", "0px");
+		$("#left").css("top", "0px");
+		$("#right").css("transform", "");
+		$("#gray").css("height", "25px");
+	}else{
+		var w = $(window).width();
+		var h = w * (550 / 1280);
+		document.getElementById("right").src = "images/arrow.png";
+		document.getElementById("left").src = "images/arrow.png";
+		$("#right").css("max-height", "");
+		$("#left").css("max-height", "");
+		$("#right").css("width", "50px");
+		$("#left").css("width", "50px");
+		$("#right").css("transform", "rotate(180deg)");
+		$("#gray").css("height", "50px");
+	}
 }
