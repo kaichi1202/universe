@@ -12,7 +12,7 @@ body	{margin: 0;
 
 .gaiyou a	{display: block;
     border-style: double;
-    
+
 	background-color: #222222;
 	color: #ffffff;
 	text-align: center;
@@ -99,6 +99,12 @@ body	{margin: 0;
 
 .boxi-1, .boxi-2, .boxi-3, .boxi-4
 	{padding-bottom: 0px}
+
+/* サイト名 */
+.site-name a{
+	text-decoration: none;
+	color: black;
+}
 
 /* ########### 768px以上 ########### */
 @media (min-width: 768px) {
