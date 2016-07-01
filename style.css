@@ -91,6 +91,12 @@ body	{margin: 0;
 		{padding-bottom: 0px;
 		}
 
+	/* サイト名 */
+	.site-name a{
+		text-decoration: none;
+		color: black;
+	}
+
 	/* ########### 768px以上 ########### */
 	@media (min-width: 768px) {
 
@@ -213,15 +219,15 @@ body	{margin: 0;
 		display: block;
 		text-align: center;
 	}
-	
+
 	.share-tw:hover{
 		opacity: 0.8;
 	}
-	
+
 	.share-fb:hover{
 		opacity: 0.8;
 	}
-	
+
 	.share-gp:hover{
 		opacity: 0.8;
 	}
