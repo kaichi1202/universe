@@ -206,8 +206,8 @@ body	{margin: 0;
 		height: 46.6666px;
 	}
 
-	.share-gp{
-		background-color: #dd4b39;
+	.share-li{
+		background-color: #00c300;
 		height: 46.6666px;
 	}
 
@@ -228,7 +228,7 @@ body	{margin: 0;
 		opacity: 0.8;
 	}
 
-	.share-gp:hover{
+	.share-li:hover{
 		opacity: 0.8;
 	}
 
@@ -321,7 +321,7 @@ body	{margin: 0;
 	float: left;
 	}
 
-.share-gp {
+.share-li {
 	height: auto;
 	width: 33.3333%;
 	float: left;
@@ -337,7 +337,7 @@ body	{margin: 0;
 	padding-bottom: 10px;
 }
 
-.share-gp a{
+.share-li a{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
