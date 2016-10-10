@@ -5,19 +5,19 @@ body	{margin: 0;
 
 
 #menu{
+	
 	background-color: #a9a9a9;
 }
 
 #menu ul{
-	margin: 0 auto;
+	margin:  auto;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	padding-left: 8px;
 	padding-right: 8px;
-	width: 70%;
+	width: 100%;
 	box-sizing: border-box;
 	list-style: none;
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
 }
 
 #menu li{
@@ -36,8 +36,10 @@ body	{margin: 0;
 }
 
 #menu li a:hover{
-	color: #C0C0C0;
+	color: gray;
 }
+
+
 
 h1{
 	text-align: center;
@@ -128,9 +130,9 @@ h1{
 	font-size: 14px;
 	text-decoration: none;
 }
-.menu li a:hover{
+/*.menu li a:hover{
 	background-color: #eeeeee;
-}
+}*/
 .menu ul:after{
 	content: "";
 	display: block;

@@ -8,23 +8,7 @@
     <link rel="stylesheet" type="text/css" href="info.css">
     <link rel="stylesheet" type="text/css" href="head.css">
     <script src="jquery1.11.1.min.js"></script>
-
-
-    <script>
-		var isDown = false;
-		$(function(){
-			$("#menubtn").click(function(){
-		    if (isDown == true) {
-		        $("#menubtn").html('<i class="fa fa-bars"></i>▽');
-		        isDown = false;
-		    } else {
-		        $("#menubtn").html('<i class="fa fa-bars"></i>△');
-		        isDown = true;
-		    }
-				$("#menu").slideToggle();
-			});
-		});
-		</script>
+    <script src="slide.js"></script>
 
 		<!-- スマホ版サイト名 -->
 		<h5 class="site-name"><a href="index.html">MobileUniverse</a></h5>
@@ -33,9 +17,9 @@
 	  </button>
 		<nav class="menu" id="menu">
 			<ul>
-				<li><a href="#">Information</a></li>
+				<li><img class="imageicon0" src="images/iconw.png" width="15.5%" height="15.5%" alt="Home"></li>
 				<li><a href="#">SiteMap</a></li>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="info.html">Information</a></li>
 			</ul>
 		</nav>
   </head>
@@ -62,9 +46,9 @@
 
 			<div class="boxi-3">
 				<div class="gaiyou">
-					<a href="pages/sun.html">
+					<a href="#h">
 						<i class="fa fa-so"></i>
-						<h1>"太陽系"</h1>
+						<h1>"更新履歴"</h1>
 					</a>
 				</div>
 			</div>
@@ -81,7 +65,7 @@
     </div>
 
 
-    <font size="6" class="gallery"><a name="g"><u>◉　写真 -Gallery-  <u></a></font>
+    <font size="6" class="light"><a name="g"><u>◉　写真 -Gallery-  <u></a></font>
     <br>
     <font size="2" color="gray" class="gallname">著作者:Eurpean Southern</font><br>
       <center><img src="images/un.jpg" width="90%" height="90%"></center><br>
@@ -95,6 +79,8 @@
       <center><img src="images/bw.jpg" width="90%" height="90%"></center><br>
     <font size="2" color="gray" class="gallname">著作者:Alain r</font>
       <center><img src="images/bw2.jpg" width="90%" height="90%"></center><br>
+
+    <font size="6" class="light"><a name="h"><u>◉　更新履歴 -History-  <u></a></font>
 
 
   </body>

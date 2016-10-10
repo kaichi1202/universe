@@ -187,3 +187,32 @@ function change(){
 		$("#gray").css("height", "50px");
 	}
 }
+
+//	ローディング表示
+window.onload = function(){
+	$(function(){
+		//	表示をフェードアウト
+		$("#loading").fadeOut(500);
+		//	メインページをフェードイン
+		setTimeout(function(){
+			$("#main").fadeIn();
+		}, 500);
+	});
+	auto();
+	load();
+	change();
+}
+
+var isDown = false;
+$(function(){
+	$("#menubtn").click(function(){
+		if (isDown == true) {
+				$("#menubtn").html('<i class="fa fa-bars"></i>▽');
+				isDown = false;
+		} else {
+				$("#menubtn").html('<i class="fa fa-bars"></i>△');
+				isDown = true;
+		}
+		$("#menu").slideToggle();
+	});
+});
