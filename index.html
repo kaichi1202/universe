@@ -1,169 +1,178 @@
 <!DOCTYPE html>
 <html lang="ja">
+
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-		<title>web</title>
+		<title>MobileUniverse</title>
 		<link rel="stylesheet" type="text/css" href="slide.css">
 		<script src="jquery1.7.0.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="head.css">
-		<script type="text/javascript" src="head.js"></script>
+		<link rel="stylesheet" type="text/css" href="load.css">
 		<script src="jquery1.11.1.min.js"></script>
 		<script type="text/javascript" src="slide.js"></script>
-		<!-- スマホ版サイト名 -->
-		<h5 class="site-name"><a href="#">MobileUniverse</a></h5>
-		<button type="button" id="menubtn">
-		<i class="fa fa-bars"></i>▽
-		</button>
-		<nav class="menu" id="menu">
-			<ul>
-				<li><img class="imageicon0" src="images/iconw.png" width="15.5%" height="15.5%" alt="Home"></li>
-				<li><a href="#">SiteMap</a></li>
-				<li><a href="info.html">Information</a></li>
-			</ul>
-
-		</nav>
+		<script type="text/javascript" src="head.js"></script>
+		<link rel="shortcut icon" href="icong.png">
 	</head>
+
+
 	<body bgcolor="#d3d3d3">
-
-
-		<div class="box">
-		  <div class="box-1">
-		  	<div class="gaiyou">
-		  		<a href="pages/un.html">
-		  			<i class="fa fa-un"></i>
-		  			<h1>"宇宙"</h1>
-		  			<p>Universe</p>
-		  		</a>
-		  	</div>
-		  </div>
-
-			<div class="box-2">
-				<div class="gaiyou">
-					<a href="pages/ea.html">
-						<i class="fa fa-ea"></i>
-						<h1>"地球"</h1>
-						<p>Earth</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="box-3">
-				<div class="gaiyou">
-					<a href="pages/sun.html">
-						<i class="fa fa-so"></i>
-						<h1>"太陽系"</h1>
-						<p>Solor system</p>
-					</a>
-				</div>
-			</div>
-
-			<div class="box-4">
-				<div class="gaiyou">
-					<a href="pages/gala.html">
-						<i class="fa fa-ga"></i>
-						<h1>"銀河"</h1>
-						<p>Galaxy</p>
-					</a>
-				</div>
-			</div>
-
-
 		<!-- ローディング表示 -->
 		<div id="loading">
-			<h1>読み込み中・・・</h1>
-			この表示が長時間消えない場合、<br>
-			JavaScriptが無効になっている可能性があります。<br>
-			このサイトはJavaScriptが無効だと正常に見ることができません。<br>
-			ブラウザの設定でJavaScriptをONにしてください。<br>
+			<br><br><br><br>
+			<center><img src="images/load.gif" width="12%" height="12%"></center>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<center>
+			<font color="gray">
+			JavaScript : ON ,ok?
+			</font>
+			</center>
 		</div>
-
 		<div id="main">
+			<!--スマホ版-->
+			<h5 class="site-name">
+				<a href="#">MobileUniverse</a>
+			</h5>
+			<button type="button" id="menubtn">
+				<i class="fa fa-bars"></i>
+				▽
+			</button>
+			<nav class="menu" id="menu">
+				<ul>
+				<!-- ホバー時のエフェクト追加 -->
+				<li class="left"><a href="index.html"><img class="icon" src=images/iconw.png></a></li>
+				<li class="right1"><a href="#">SiteMap</a></li>
+				<li class="right2"><a href="info.html">Information</a></li>
+				<li class="right3"><a href="quiz.html">Quiz</a></li>
+			</ul>
+			</nav>
+	
+			<div class="box">
+				<div class="box-1">
+					<div class="gaiyou">
+						<a href="pages/un.html">
+							<i class="fa fa-un"></i>
+							<h1>宇宙の謎</h1>
+							<p></p>
+						</a>
+					</div>
+				</div>
+				<div class="box-2">
+					<div class="gaiyou">
+						<a href="pages/ea.html">
+							<i class="fa fa-ea"></i>
+							<h1>地球</h1>
+							<p></p>
+						</a>
+					</div>
+				</div>
+				<div class="box-3">
+					<div class="gaiyou">
+						<a href="pages/sun.html">
+							<i class="fa fa-so"></i>
+							<h1>太陽系</h1>
+							<p></p>
+						</a>
+					</div>
+				</div>
+				<div class="box-4">
+					<div class="gaiyou">
+						<a href="pages/gala.html">
+							<i class="fa fa-ga"></i>
+							<h1>銀河</h1>
+							<p></p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+	
+			
 			<div class="slider">
-				<div id="text">宇宙</div>
-				<img id="right" src="images/arrow.png">
-				<img id="left" src="images/arrow.png">
+				<div id="text">宇宙の謎</div>
+				<a href="#" onclick="rightImageClick();"><img id="right" src="images/arrow.png"></a>
+				<a href="#" onclick="leftImageClick();"><img id="left" src="images/arrow.png"></a>
 				<img id="gray" src="images/gray.png">
 				<div id="moveButton">
-					<div id="one">●</div>
-					<div id="two">○</div>
-					<div id="three">○</div>
-					<div id="four">○</div>
-					<div id="five">○</div>
+					<a href="#" onclick="oneClick();"><div id="one">●</div></a>
+					<a href="#" onclick="twoClick();"><div id="two">○</div></a>
+					<a href="#" onclick="threeClick();"><div id="three">○</div></a>
+					<a href="#" onclick="fourClick();"><div id="four">○</div></a>
+					<a href="#" onclick="fiveClick();"><div id="five">○</div></a>
 				</div>
 				<div class="slideSet">
-					<div class="slide"><a href="pages/un.html"><img src="images/un.jpg" class="slideImg"></a></div>
+					<div class="slide"><a href="pages/un.html"><img src="images/un.jpg" class="slideImg" width="100%"></a></div>
 					<div class="slide"><a href="pages/ea.html"><img src="images/earth.jpg" class="slideImg"></a></div>
 					<div class="slide"><a href="pages/sun.html"><img src="images/sun.jpg" class="slideImg"></a></div>
 					<div class="slide"><a href="pages/gala.html"><img src="images/gala.jpg" class="slideImg"></a></div>
 					<div class="slide"><a href="pages/bw.html"><img src="images/bw.jpg" class="slideImg"></a></div>
 				</div>
 			</div>
-		</div>
-
-		<div class="boxm">
-			<div class="boxm-1">
-				<div class="gaiyoum">
-					<a href="pages/un.html">
-						<i class="fa fa-ali1"></i>
-						<h1>宇宙人</h1>
-					</a>
+	
+			<div class="boxm">
+				<div class="boxm-1">
+					<div class="gaiyoum">
+						<a href="pages/alien.html">
+							<i class="fa fa-ali1"></i>
+							<h1>宇宙人</h1>
+						</a>
+					</div>
+				</div>
+				<div class="boxm-2">
+					<div class="gaiyoum">
+						<a href="pages/ea.html">
+							<i class="fa fa-ali2"></i>
+							<h1>タイムトラベル</h1>
+						</a>
+					</div>
+				</div>
+				<div class="boxm-3">
+					<div class="gaiyoum">
+						<a href="pages/mars.html">
+							<i class="fa fa-ali3"></i>
+							<h1>移住計画</h1>
+						</a>
+					</div>
+				</div>
+				<div class="boxm-4">
+					<div class="gaiyoum">
+						<a href="pages/mars.html">
+							<i class="fa fa-ali4"></i>
+							<h1>人工衛星</h1>
+						</a>
+					</div>
+				</div>
+				<div class="boxm-5">
+					<div class="gaiyoum">
+						<a href="pages/bw.html">
+							<i class="fa fa-ali5"></i>
+							<h1>ブラックホール</h1>
+						</a>
+					</div>
+				</div>
+	
+				<div class="share">
+					<div class="share-fb">
+						<a href="http://www.facebook.com/share.php?u=http://mobile-universe.jp/" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+							Facebook
+						</a>
+					</div>
+					<div class="share-tw">
+						<a href="https://twitter.com/intent/tweet?text= Mobile Universe http://mobile-universe.jp/ &amp;url=http;//aa.com/&amp;via=@MobileUniverse_" onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+							Twitter
+						</a>
+					</div>
+					<div class="share-li">
+						<a href="http://line.me/R/msg/text/?%5bMobileUniverse%5dhttp%3a%2f%2fcontest%2ejapias%2ejp%2ftqj19%2f190070%2findex%2ehtml" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+							LINE
+						</a>
+					</div>
 				</div>
 			</div>
-
-			<div class="boxm-2">
-				<div class="gaiyoum">
-					<a href="pages/ea.html">
-						<i class="fa fa-ali2"></i>
-						<h1>タイムトラベル</h1>
-					</a>
-				</div>
-			</div>
-
-			<div class="boxm-3">
-				<div class="gaiyoum">
-					<a href="pages/sun.html">
-						<i class="fa fa-ali3"></i>
-						<h1>移住計画</h1>
-					</a>
-				</div>
-			</div>
-
-			<div class="boxm-4">
-				<div class="gaiyoum">
-					<a href="pages/gala.html">
-						<i class="fa fa-ali4"></i>
-						<h1>人工衛星</h1>
-					</a>
-				</div>
-			</div>
-
-			<div class="boxm-5">
-				<div class="gaiyoum">
-					<a href="pages/gala.html">
-						<i class="fa fa-ali5"></i>
-						<h1>ブラックホール</h1>
-					</a>
-				</div>
-			</div>
-
-			<div class="share">
-				<div class="share-fb">
-					<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fexample.com" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">
-						Facebook
-					</a>
-				</div>
-				<div class="share-tw">
-					<a href="https://twitter.com/intent/tweet?text= 宇宙 &amp;url=http;//aa.com/&amp;via=@kazaki_monst" onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;">
-						Twitter
-					</a>
-				</div>
-				<div class="share-li">
-					<a href="http://line.me/R/msg/text/?%5bMobileUniverse%5dhttp%3a%2f%2fcontest%2ejapias%2ejp%2ftqj19%2f190070%2findex%2ehtml" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">
-						LINE
-					</a>
-				</div>
+			<div id="footerc">
+				<p>Copyright 2016 MobileUniverse　</p>
 			</div>
 		</div>
 	</body>

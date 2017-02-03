@@ -3,26 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-		<title>parallax</title>
+		<title>Universe - MobileUniverse</title>
 		<link rel="stylesheet" type="text/css" href="parallax.css">
 		<link rel="stylesheet" type="text/css" href="../head.css">
+		<link rel="stylesheet" type="text/css" href="../style.css">
 		<script src="../jquery1.11.1.min.js"></script>
-		<script>
-		var isDown = false;
-		$(function(){
-			$("#menubtn").click(function(){
-		    if (isDown == true) {
-		        $("#menubtn").html('<i class="fa fa-bars"></i>▽');
-		        isDown = false;
-		    } else {
-		        $("#menubtn").html('<i class="fa fa-bars"></i>△');
-		        isDown = true;
-		    }
-				$("#menu").slideToggle();
-			});
-		});
-		</script>
-
+		<script type="text/javascript" src="pages-head.js"></script>
 		<!-- スマホ版サイト名 -->
 		<h5 class="site-name"><a href="../index.html">MobileUniverse</a></h5>
 		<button type="button" id="menubtn">
@@ -30,9 +16,10 @@
 	  </button>
 		<nav class="menu" id="menu">
 			<ul>
-				<li><a href="../index.html"><img src="../images/iconw.png" width="15.5%" height="15.5%"></a></li>
-				<li><a href="#">SiteMap</a></li>
-				<li><a href="../info.html">Information</a></li>
+				<!-- ホバー時のエフェクト追加 -->
+				<li class="left"><a href="../index.html"><img class="icon" src=../images/iconw.png></a></li>
+				<li class="right1"><a href="#">SiteMap</a></li>
+				<li class="right2"><a href="../info.html">Information</a></li>
 			</ul>
 		</nav>
 	</head>
@@ -52,6 +39,9 @@
 				<br><br><br><br><br><br><br><br><br><br>
 				スクロール用
 			</div>
+		</div>
+		<div id="footerc">
+			<p>Copyright 2016 MobileUniverse　</p>
 		</div>
 	</body>
 </html>

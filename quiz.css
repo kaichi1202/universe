@@ -1,0 +1,41 @@
+body{
+    height: 100%;
+}
+
+.button{
+    float: left;
+    width: 31.333%;
+    height: 50px;
+    background-color: lightblue;
+    margin: 1%;
+    padding-top: 18px;
+    font-size: 22px;
+    text-align:center;
+    color:white;
+    text-shadow: 0 0 10px gray, 0 0 15px black;
+}
+
+.button p{
+    color: blue;
+    text-align: center;
+}
+
+#footerc{
+    position: fixed;
+    clear: left;
+    bottom: 0;
+    
+}
+.quiz{
+    width:80%;
+    background-color: #a9a9a9;
+    overflow: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.que{
+    font-size:25px;
+    color:white;
+    text-shadow: 0 0 10px gray, 0 0 15px black;
+}

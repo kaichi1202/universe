@@ -43,6 +43,15 @@ div.parallax{
 .img_5{
 	background: url(images/bwp.jpg);
 }
+.img_6{
+	background: url(images/mars.jpg);
+}
+.img_7{
+	background: url(images/alien.jpg);
+}
+.img_7 span{
+	text-shadow: 0 0 10px lightblue, 0 0 15px lightblue;
+}
 
 .bottom_title{
 	text-shadow: 0 0 10px gray, 0 0 15px black;
@@ -56,6 +65,14 @@ div.parallax{
 
 .title_blue{
 	color: lightblue;
+}
+
+.title_green{
+	color: lightgreen;
+}
+
+.title_red{
+	color: red;
 }
 
 /* サイト名 */
@@ -72,3 +89,16 @@ div.parallax{
 		width: auto;
 	}
 }
+
+.hon{
+	color:white;
+	text-shadow: 0 0 10px gray, 0 0 15px black;
+	font-size:20px;
+}
+.honb{
+	color:white;
+	text-shadow: 0 0 10px gray, 0 0 15px black;
+	font-size:30px;
+}
+
+

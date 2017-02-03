@@ -47,10 +47,10 @@ body	{margin: 0;
 
 	.gaiyou p	{margin-top: 0;
 		margin-bottom: 0;
-		padding-top: 0px;
-		padding-bottom: 0px;
+		padding-top: 1px;
+		padding-bottom: 1px;
 		background-color: #524e3c;
-		font-size: 13px;
+		font-size: 11px;
 		}
 
 
@@ -153,7 +153,7 @@ body	{margin: 0;
 /*///////////注目記事//////////*/
 .gaiyoum a	{display: block;
 	background-color: #222222;
-	color: #d3d3d3;
+	color: #ffffff;
 	text-align: center;
 	text-decoration: none;
 	float: left;
@@ -169,15 +169,35 @@ body	{margin: 0;
 	font-size: 40px;
 	}
 
-.gaiyoum .fa-ali1	{background-color: silver}
+/* 余裕があれば1枚にする */
+.gaiyoum .fa-ali1	{
+	background-image: url("images/alien.png");
+	background-size: 100px;
+	background-color: silver
+}
 
-.gaiyoum .fa-ali2	{background-color: #6495ed}
+.gaiyoum .fa-ali2	{
+	background-image: url("images/time_machine.png");
+	background-size:cover;
+	background-color: #6495ed
+}
+.gaiyoum .fa-ali3	{
+	background-image: url("images/mars.png");
+	background-size:cover;
+	background-color: #fa8072
+}
 
-.gaiyoum .fa-ali3	{background-color: #fa8072}
+.gaiyoum .fa-ali4	{
+	background-image: url("images/space_jinkoueisei.png");
+	background-size:cover;
+	background-color: gold
+}
 
-.gaiyoum .fa-ali4	{background-color: gold}
-
-.gaiyoum .fa-ali5	{background-color: #da70d6}
+.gaiyoum .fa-ali5	{
+	background-image: url("images/space_blackhole.png");
+	background-size:cover;
+	background-color: #da70d6
+}
 
 .gaiyoum h1	{margin-top: 0;
 	margin-bottom: 0;
@@ -356,3 +376,21 @@ body	{margin: 0;
 	}
 }
 /*///////////注目記事END//////////*/
+#footerc{
+	background: #303030;
+	font-size: 71%;
+	text-align: right;
+	width: 100%;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	color: #FFF;
+}
+table {
+	border-collapse: collapse;
+	width:50%;
+}
+td {
+	border: solid 1px;
+	padding: 0.5em;
+}
+

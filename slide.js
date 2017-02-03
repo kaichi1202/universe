@@ -1,7 +1,3 @@
-//	キーボード操作
-//	TODO: スマホ対応
-//	TODO: 他ブラウザ(IE等)での対応を確認
-//	TODO: コメントを書く
 document.onkeydown = function(e){
 	//	キーコード取得
 	var keyCode = e.keyCode;
@@ -44,7 +40,7 @@ var sliding = function(){
 			$("#three").text("○");
 			$("#four").text("○");
 			$("#five").text("○");
-			$("#text").text("宇宙");
+			$("#text").text("宇宙の謎");
 			break;
 		case 1:
 			$("#one").text("○");
@@ -82,47 +78,51 @@ var sliding = function(){
 }
 
 //	前へ
-$("#left").click(function(){
+function leftImageClick(){
 	slideCurrent--;
 	sliding();
-});
+}
 
 //	次へ
-$("#right").click(function(){
+function rightImageClick(){	
 	slideCurrent++;
 	sliding();
-});
+}
 
-$("#one").click(function(){
+function oneClick(){
 	slideCurrent = 0;
 	sliding();
-});
+}
 
-$("#two").click(function(){
+function twoClick(){
 	slideCurrent = 1;
 	sliding();
-});
+}
 
-$("#three").click(function(){
+function threeClick(){
 	slideCurrent = 2;
 	sliding();
-});
+}
 
-$("#four").click(function(){
+function fourClick(){
 	slideCurrent = 3;
 	sliding();
-});
+}
 
-$("#five").click(function(){
+function fiveClick(){
 	slideCurrent = 4;
 	sliding();
-});
+}
 
 //	オートスライド
 function auto(){
-	sliding();
+	setTimeout("autoSlide()", 8000);
+}
+
+function autoSlide(){
 	slideCurrent++;
-	setTimeout("auto()", 8000);
+	sliding();
+	setTimeout("autoSlide()", 8000);
 }
 
 function load(){
@@ -192,27 +192,15 @@ function change(){
 window.onload = function(){
 	$(function(){
 		//	表示をフェードアウト
-		$("#loading").fadeOut(500);
+		// $("#loading").fadeOut(500);
+		$("#loading").hide();
 		//	メインページをフェードイン
-		setTimeout(function(){
-			$("#main").fadeIn();
-		}, 500);
+		// setTimeout(function(){
+		// 	$("#main").fadeIn();
+		// }, 500);
+		$("#main").fadeIn();
 	});
 	auto();
 	load();
 	change();
 }
-
-var isDown = false;
-$(function(){
-	$("#menubtn").click(function(){
-		if (isDown == true) {
-				$("#menubtn").html('<i class="fa fa-bars"></i>▽');
-				isDown = false;
-		} else {
-				$("#menubtn").html('<i class="fa fa-bars"></i>△');
-				isDown = true;
-		}
-		$("#menu").slideToggle();
-	});
-});

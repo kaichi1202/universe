@@ -10,55 +10,6 @@ body	{margin: 0;
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
 
-.gaiyou a	{display: block;
-    border-style: double;
-
-	background-color: #222222;
-	color: #ffffff;
-	text-align: center;
-	text-decoration: none;
-	width: 100%}
-
-.gaiyou a:hover	{opacity: 0.8}
-
-.gaiyou i	{display: block;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	}
-
-.gaiyou .fa-un	{background-color: #4169e1}
-
-.gaiyou .fa-ea	{background-color: #32cd32}
-
-.gaiyou .fa-so	{background-color: #ffa500}
-
-.gaiyou .fa-ga	{background-color: #1E90FF}
-
-
-.gaiyou h1	{margin-top: 0;
-	margin-bottom: 0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 20px;
-	font-weight: normal}
-
-
-
-.boxi-1	{float: left;
-	width: 50%;
-	margin-right: 0%}
-
-.boxi-2	{float: left;
-	width: 50%;
-	margin-right: 0%}
-
-.boxi-3	{float: left;
-	width: 50%;
-	margin-right: 0%}
-
-.boxi-4	{float: left;
-	width: 50%;
-	margin-right: 0%}
 
 
 /* 補足説明 */
@@ -88,47 +39,65 @@ body	{margin: 0;
 	margin-left: -15px;
 }
 
-/* コピーライト */
-.copyright p	{margin: 0;
-	color: #666666;
-	font-size: 14px}
-
-/* ボックスの上下 */
-
-.boxi	{padding-top: 0px}
-
-.boxi-1, .boxi-2, .boxi-3, .boxi-4
-	{padding-bottom: 0px}
-
-/* サイト名 */
-.site-name a{
+a.btn{
+	display: inline-block;
+	width: 120px;
+	margin: 45px 40px 40px;
+	padding: 10px 10px;
+	border: 2px solid #a9a9a9;
+	background: transparent;
+	color: #a9a9a9;
+	text-align: center;
 	text-decoration: none;
-	color: black;
+	font-size:20px;
+	line-height: 1;
+	transition: .3s;
+}
+a.top1:hover {
+  border: 2px solid rgba(0,0,0,.5);
+  color: rgba(0,0,0,.5);
+}
+div.info {
+overflow: auto;
+width : 90%;
+height : 200px;
+font-size : 100%;
+color : #ffffff;
+background-color: #a9a9a9;
+border:2px black;
+padding : 3px;
 }
 
-/* ########### 768px以上 ########### */
-@media (min-width: 768px) {
 
-/* BOXi-1、BOXi-2、BOXi-3を横に並べる設定 */
-.bo:after	{content: "";
-	display: block;
-	clear: both}
-
-.boxi-1	{float: left;
-	width: 25%;
-	margin-right: 0%}
-
-.boxi-2	{float: left;
-	width: 25%;
-	margin-right: 0%}
-
-.boxi-3	{float: left;
-	width: 25%;
-	margin-right: 0%}
-
-.boxi-4	{float: left;
-	width: 25%;
-	margin-right: 0%}
-
-
+.systems {
+	position: relative;
 }
+
+.ie, .me, .sa, .gc {
+	position: absolute;
+	opacity: 0.0;
+}
+
+.active {
+	right: 5%;
+	left: 5%;
+	opacity: 1.0;
+}
+
+/*.button {*/
+/*	height: 170px;*/
+/*}*/
+
+.ieb, .meb, .sab, .gcb {
+	height: 100%;
+	width: 17.5%;
+	cursor: pointer;
+}
+
+.button{
+	width: 40%;
+}
+
+.sc a:link { color: #ffffff; }
+.sc a:visited { color: #ffffff; }
+.sc a:hover { color: gray; }

@@ -51,4 +51,4 @@ http://edu.jaxa.jp/materialDB/html/teacher/4/con3.html
 ・科学衛星
 科学衛星には様々な種類がある。
 ブラックホールを観察するX線天体観測衛星、
-衛星を周回
+衛星を周回する

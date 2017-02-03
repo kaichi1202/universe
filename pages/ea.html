@@ -3,26 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-		<title>parallax</title>
+		<title>Earth - MobileUniverse</title>
 		<link rel="stylesheet" type="text/css" href="parallax.css">
 		<link rel="stylesheet" type="text/css" href="../head.css">
+		<link rel="stylesheet" type="text/css" href="../style.css">
 		<script src="../jquery1.11.1.min.js"></script>
-		<script>
-		var isDown = false;
-		$(function(){
-			$("#menubtn").click(function(){
-		    if (isDown == true) {
-		        $("#menubtn").html('<i class="fa fa-bars"></i>▽');
-		        isDown = false;
-		    } else {
-		        $("#menubtn").html('<i class="fa fa-bars"></i>△');
-		        isDown = true;
-		    }
-				$("#menu").slideToggle();
-			});
-		});
-		</script>
-
+		<script type="text/javascript" src="pages/head.js"></script>
 		<!-- スマホ版サイト名 -->
 		<h5 class="site-name"><a href="../index.html">MobileUniverse</a></h5>
 		<button type="button" id="menubtn">
@@ -30,32 +16,52 @@
 	  </button>
 		<nav class="menu" id="menu">
 			<ul>
-				<li><a href="../index.html"><img src="../images/iconw.png" width="15.5%" height="15.5%" border="0"></a></li>
-				<li><a href="#">SiteMap</a></li>
-				<li><a href="../info.html">Information</a></li>
+				<!-- ホバー時のエフェクト追加 -->
+				<li class="left"><a href="../index.html"><img class="icon" src=../images/iconw.png></a></li>
+				<li class="right1"><a href="#">SiteMap</a></li>
+				<li class="right2"><a href="../info.html">Information</a></li>
+				<li class="right3"><a href="../quiz.html">Quiz</a></li>
 			</ul>
 		</nav>
 	</head>
-	<body bgcolor="#d3d3d3">
-		<h1 class="titile"><span class="title_blue">水</span>の惑星、地球</h1>
-		<center class="bottom_title">Water of the planet, Earth.</center><br>
-		<center>
-			
-	</center>
-		<br><br><br><br><br><br><br><br><br><br>
+	<body bgcolor="#90ee90"> <!-- 元の色"#d3d3d3" -->
+		<br><br>
+		<img src="../images/sea.png" align="left" width="400px" height="400px" style="margin-left:50px;"><br><br>
+		<h1 class="titile" ><span class="title_blue">水</span>の惑星地球</h1>
+		<br><br>
+		<center><font class="hon">私たちが住む地球は<br>表面積の７０％が海であり<br>水に恵まれています
+		<br><br>海ができたことで地球に<br>多くの生物が誕生しました</font>	
+		</center>
+		<br><br>
 		<div class="parallax img_2">
 			<div class="box">
-				<h2>地球</h2>
+				<h2>生物の惑星</h2>
 			</div>
 		</div>
-
-		<div class="content">
+		<br>
+		<img src="../images/air.png" align="right" width="400px" height="400px" style="margin-right:50px;"><br>
+		<h1 class="titile" >生物が生ける<span class="title_green">環境</span></h1>
+		<br><br>
+		<center><font class="hon">
+			地球は他の惑星と比べて<br>二酸化炭素が少なく<br><br><br>生物が生きやすい<br>環境になっています
+		</font>	
+		</center>
+		<br><br><br>
+		<div class="parallax img_2">
 			<div class="box">
-				地球とは何か...
-				<br><br><br><br><br><br><br><br><br><br>
-				<br><br><br><br><br><br><br><br><br><br>
-				スクロール用
+				<h2>生物の惑星</h2>
 			</div>
+		</div>
+		<br><br><br>
+		<center><font class="honb">
+			我々 生物は多くの奇跡が<br>重なってできたものなのです
+		</font>	
+		</center>
+		<br><br><br>
+
+
+		<div id="footerc">
+			<p>Copyright 2016 MobileUniverse　</p>
 		</div>
 	</body>
 </html>

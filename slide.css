@@ -4,10 +4,6 @@ body{
 	background: #d3d3d3;
 }
 
-#main{
-	display: none;
-}
-
 .slide{
 	z-index: 1;
 	float: left;

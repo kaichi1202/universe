@@ -4,67 +4,94 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>Information</title>
+    <title>Information - MobileUniverse</title>
     <link rel="stylesheet" type="text/css" href="info.css">
     <link rel="stylesheet" type="text/css" href="head.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="jquery1.11.1.min.js"></script>
-    <script src="slide.js"></script>
+    <!--<script src="slide.js"></script>-->
+		<script src="info.js"></script>
+		<script src="head.js"></script>
+
 
 		<!-- スマホ版サイト名 -->
 		<h5 class="site-name"><a href="index.html">MobileUniverse</a></h5>
 		<button type="button" id="menubtn">
 		  <i class="fa fa-bars"></i>▽
 	  </button>
+	  <a name="top">
 		<nav class="menu" id="menu">
 			<ul>
-				<li><img class="imageicon0" src="images/iconw.png" width="15.5%" height="15.5%" alt="Home"></li>
-				<li><a href="#">SiteMap</a></li>
-				<li><a href="info.html">Information</a></li>
+				<!-- ホバー時のエフェクト追加 -->
+				<li class="left"><a href="index.html"><img class="icon" src=images/iconw.png></a></li>
+				<li class="right1"><a href="#">SiteMap</a></li>
+				<li class="right2"><a href="#">Information</a></li>
+				<li class="right3"><a href="quiz.html">Quiz</a></li>
 			</ul>
 		</nav>
+		</a>
   </head>
 
   <body bgcolor="#d3d3d3">
-    <div class="boxi">
-		  <div class="boxi-1">
+    <div class="box">
+		  <div class="box-1">
 		  	<div class="gaiyou">
-		  		<a href="pages/un.html">
+		  		<a href="#s">
 		  			<i class="fa fa-un"></i>
-		  			<h1>"宇宙"</h1>
+		  			<h1>System</h1>
 		  		</a>
 		  	</div>
 		  </div>
 
-			<div class="boxi-2">
+			<div class="box-2">
 				<div class="gaiyou">
 					<a href="#g">
 						<i class="fa fa-ea"></i>
-						<h1>"gala"</h1>
+						<h1>Gallery</h1>
 					</a>
 				</div>
 			</div>
 
-			<div class="boxi-3">
+			<div class="box-3">
 				<div class="gaiyou">
 					<a href="#h">
 						<i class="fa fa-so"></i>
-						<h1>"更新履歴"</h1>
+						<h1>History</h1>
 					</a>
 				</div>
 			</div>
 
-			<div class="boxi-4">
+			<div class="box-4">
 				<div class="gaiyou">
-					<a href="pages/gala.html">
+					<a href="#so">
 						<i class="fa fa-ga"></i>
-						<h1>"銀河"</h1>
+						<h1>Source</h1>
 					</a>
 				</div>
 			</div>
 
     </div>
 
-
+    <font size="6" class="light"><a name="s"><u>◉　推奨環境 -System-  <u></a></font>
+	 	<!-- マウスカーソル -->
+	 	<!-- 背景 -->
+	 	<center>
+	 		<div class="button">
+	    <img class="ieb" onclick="ieClick();" src="images/ie-top.png"><img class="meb" onclick="meClick();" src="images/me-top.png"><img class="sab" onclick="saClick();" src="images/sa-top.png"><img class="gcb" onclick="gcClick();" src="images/gc-top.png">
+	  	</div>
+	  </center>
+    <div class="systems">
+    	<center><img class="ie active" src="images/ie.png" width="90%" height="90%"></center>
+    	<center><img class="me" src="images/me.png" width="90%" height="90%"></center>
+    	<center><img class="sa" src="images/sa.png" width="90%" height="90%"></center>
+    	<center><img class="gc" src="images/gc.png" width="90%" height="90%"></center>
+    </div>
+    <br>
+    <center><img src="images/sp.png" width="90%" height="90%"></center>
+    <br>
+		<center><a href="#top"class="btn top1">TOP</a></center>
+		
+		
     <font size="6" class="light"><a name="g"><u>◉　写真 -Gallery-  <u></a></font>
     <br>
     <font size="2" color="gray" class="gallname">著作者:Eurpean Southern</font><br>
@@ -78,10 +105,39 @@
     <font size="2" color="gray" class="gallname">著作者:NASA</font>
       <center><img src="images/bw.jpg" width="90%" height="90%"></center><br>
     <font size="2" color="gray" class="gallname">著作者:Alain r</font>
-      <center><img src="images/bw2.jpg" width="90%" height="90%"></center><br>
+      <center><img src="images/bw2.jpg" width="90%" height="90%"></center>
+		<center><a href="#top"class="btn top1">TOP</a></center>
+
 
     <font size="6" class="light"><a name="h"><u>◉　更新履歴 -History-  <u></a></font>
+		<br>
+		<div class="info">
+						・2016 11/05 - 宇宙人/移住計画/地球　仮ページアップ<br>
+						・2016 10/20 - テストページアップ<br>
+						・2016 10/01 - サイト作成開始<br>
+						
+						
+		</div>
+		<center><a href="#top"class="btn top1">TOP</a></center>
 
 
+		<font size="6" class="light"><a name="so"><u>◉　参考文献 -Source-  <u></a></font><br>
+		<font  class="sc" style="text-shadow: 0 0 10px gray, 0 0 15px black;">
+		<a href="http://www.gibe-on.info/entry/space-mystery/">a</a><br>
+		<a href="http://gigazine.net/news/20160223-apollo-10-space-music/">b</a><br>
+		<a href="http://世界の不思議.net/580.html">c</a><br>
+		<a href="http://sakanainv.seesaa.net/article/442332746.html">d</a><br>
+		<a href="http://cosmolibrary.com/宇宙開発/火星移住計画の理由/">e</a><br>
+		<a href="http://www.tus.ac.jp/rikanomoto/enjoy/travel/">f</a><br>
+	
+		</font>
+		
+		<br><br><br><br><br><br><br>
+		<center><a href="#top"class="btn top1">TOP</a></center><br>
+
+
+		<div id="footerc">
+			<p>Copyright 2016 MobileUniverse　</p>
+		</div>
   </body>
 </html>
