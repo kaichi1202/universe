@@ -6,13 +6,18 @@ body{
     float: left;
     width: 31.333%;
     height: 50px;
-    background-color: lightblue;
+    background-color: #ADD8E6;
     margin: 1%;
     padding-top: 18px;
     font-size: 22px;
     text-align:center;
     color:white;
     text-shadow: 0 0 10px gray, 0 0 15px black;
+    cursor:pointer;
+}
+
+.button:hover {
+  background-color: #C1ECFA;
 }
 
 .button p{
@@ -24,7 +29,7 @@ body{
     position: fixed;
     clear: left;
     bottom: 0;
-    
+
 }
 .quiz{
     width:80%;
@@ -32,7 +37,7 @@ body{
     overflow: auto;
     margin-left: 10%;
     margin-right: 10%;
-    
+
 }
 .que{
     font-size:25px;
