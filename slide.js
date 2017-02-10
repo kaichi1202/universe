@@ -176,6 +176,9 @@ function change(){
 		$("#left").css("top", "0px");
 		$("#right").css("transform", "");
 		$("#gray").css("height", "25px");
+		$(".share tw").css("height", $(".gaiyou a").height() / 3);
+		$(".share fb").css("height", $(".gaiyou a").height() / 3);
+		$(".share li").css("height", $(".gaiyou a").height() / 3);
 	}else{
 		var w = $(window).width();
 		var h = w * (550 / 1280);
