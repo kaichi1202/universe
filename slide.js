@@ -156,7 +156,7 @@ function setPosition(){
 	var slideNum = $(".slide").length;			//	.slideの数
 	var slideSetWidth = w * slideNum;			//	幅 * 数
 	$(".slideSet").css("width", slideSetWidth);	//	cssにセット
-	$(".share-tw, .share-fb, .share-li").height($("boxm-5 a").height() / 3);
+	$(".share-tw a, .share-fb a, .share-li a").height($("boxm-5 a").height() / 3 + 20);
 }
 
 //	スマホ対応
@@ -174,7 +174,7 @@ function change(){
 		$("#left").css("top", "0px");
 		$("#right").css("transform", "");
 		$("#gray").css("height", "25px");
-		$(".share-tw, .share-fb, .share-li").height($("boxm-5 a").height() / 3);
+		$(".share-tw a, .share-fb a, .share-li a").height($("boxm-5 a").height() / 3);
 	}else{
 		var w = $(window).width();
 		var h = w * (550 / 1280);
